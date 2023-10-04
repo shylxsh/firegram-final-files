@@ -1,5 +1,6 @@
 {
   "name": "firegram",
+  "homepage": "https://shylxsh.github.io/my_gallery/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +9,15 @@
     "@testing-library/user-event": "^7.2.1",
     "firebase": "^7.16.1",
     "framer-motion": "^2.1.2",
+    "gh-pages": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build", 
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
